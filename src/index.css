@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #D0F0C0;
+    background-image: url(./assets/fruit.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    color: #432000;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+.imag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    position: relative;
+    left: 70px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+    background-color: #20B2AA;
+    color: #FDFDFD;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+img {
+    max-width: 150px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #01796F;
+    font-size: 15px;
+}
+
+svg {
+    margin-left: 3px;
+}
+
+input {
+    color: #432000;
+    color: #6C7C59;
+    background-color: #A9BA9D;
+    border: 0;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #008080;
+    border: 0;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background-color: #004953;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    color: #01796F;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #ACE1AF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: #32de84;
+    cursor: pointer;
+}
+
+.prove {
+    background-color: #20B2AA;
+}
+
+.prove:hover {
+    background-color: #20B2AA;
+}
+
+.hiddenCounter {
+    visibility: hidden;
+}
+
+.blow {
+    animation: anim 0.5s ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
